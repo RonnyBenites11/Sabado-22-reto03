@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="images/logo.png">
+    <header class="cabecera">
+        <img class="logo" src="images/logo.png">
         <nav>
             <ul>
                 <li><a href="#"> Home</a></li>
@@ -15,22 +16,24 @@
                 <li><a href="#"> Servicios</a></li>
                 <li><a href="#"> Paquetes Personalizados</a></li>
             </ul>
-            <div>
-                <button> Contacto</button>
-                
-            </div>
+            
         </nav>
+        <div class="boton">
+            <button> Contacto</button>
+            
+        </div>
     </header>
     <main >
-        <section>
-            <img src="images/buffet-1.jpg">
-             <h1> SERVICIO DE CATERING PARA TODA OCASION</h1>
+        <section class="seccion1">
+            <img class="banner" src="images/buffet-1.jpg">
+             <h1 class="texto-banner"> SERVICIO DE CATERING PARA TODA OCASION</h1>
          </section>
-         <section>
-            <h2>   QUIENES SOMOS</h2>
-            <div>
+         <section class="seccion2">
+            <h2 class="subtitulo">   QUIENES SOMOS</h2>
+            <div class="linea-marron"></div>
+            <div class="imgseccion2">
                 <img src="images/buffet-section.jpg">
-                <div>
+                <div class="parrafo">
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Reprehenderit repudiandae tempora possimus, 
                         libero asperiores commodi eveniet, reiciendis doloribus fuga iure impedit expedita natus nostrum
@@ -46,15 +49,16 @@
                 </div>
             </div>
          </section>
-         <section>
-            <img src="images/food-table.jpg">
-            <h3> Promovemos soluciones premium de catering 
+         <section class="seccion3">
+            <img class="banner tamaño" src="images/food-table.jpg">
+            <h3 class="texto-banner color"> Promovemos soluciones premium de catering 
                 para eventos fomales o casuales
             </h3>
          </section>
          <section>
-            <h2>NUESTROS SERVICIOS</h2>
-            <div>
+            <h2 class="subtitulo">NUESTROS SERVICIOS</h2>
+            <div class="linea-marron"></div>
+            <div class="contenedor-articulos">
                 <article>
                     <img src="images/wedding.jpg">
                     <p> Bodas</p>
@@ -70,20 +74,22 @@
             </div>
          </section>
          <section>
-            <h2> PAQUETES DE CATERING</h2>
-            <p>Contamos con paquetes personalizados a la medida de tus necesidades</p>
-            <div>
-                <article>
+            <h2 class="subtitulo"> PAQUETES DE CATERING</h2>
+            <div class="linea-marron"></div>
+            <p class="subtitulo">Contamos con paquetes personalizados a la medida de tus necesidades</p>
+           
+            <div class="contenedor-columnas">
+                <article class="columna">
                     <h3>Silver</h3>
-                    <p>$ 15.99 / persona</p>
+                    <p class="sombra">$ 15.99 / persona</p>
                     <p>Lorem ipsum dolor sit amet consec</p>
                     <p>Lorem ipsum dolor sit amet consec</p>
                     <p>Lorem ipsum dolor sit amet consec</p>
                     <p>Lorem ipsum dolor sit amet consec</p>
                 </article>
-                <article>
+                <article class="columna">
                     <h3>Gold</h3>
-                    <p>$ 19.99 / persona</p>
+                    <p class="sombra">$ 19.99 / persona</p>
                     <p>Lorem ipsum dolor sit amet consec</p>
                     <p>Lorem ipsum dolor sit amet consec</p>
                     <p>Lorem ipsum dolor sit amet consec</p>
@@ -91,9 +97,9 @@
                     <p>Lorem ipsum dolor sit amet consec</p>
                     <p>Lorem ipsum dolor sit amet consec</p>
                 </article>
-                <article>
+                <article class="columna">
                     <h3>Platinium</h3>
-                    <p>$ 29.99 / persona</p>
+                    <p class="sombra">$ 29.99 / persona</p>
                     <p>Lorem ipsum dolor sit amet consec</p>
                     <p>Lorem ipsum dolor sit amet consec</p>
                     <p>Lorem ipsum dolor sit amet consec</p>
@@ -108,22 +114,34 @@
         
     </main>
     <footer>
-        <section>
-            <h2> CONTACTO</h2>
+        <section class="seccion2">
+            <h2 class="subtitulo"> CONTACTO</h2>
+            <div class="linea-marron"></div>
             <p>Direccion: Brodway & Morris St, New Yotk, NY 10006</p>
             <p> Telefono: 1-234-567-8910</p>
             <p> Email: info@email.com</p>
          </section>
-        <form>
-            <label>Nombre</label>
-            <input type="text">
-            <label>Telefono</label>
-            <input type="text">
-            <label>Email</label>
-            <input type="text">
-            <label>Escribir Comentario</label>
-            <textarea></textarea>
-        </form>
+        <div class="form-container">
+           
+            <form action="#">
+                <label for="nombre">Nombre:</label>
+                <label for="nombre">Telefono:</label>
+                <label for="nombre">Email:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="telefono" name="telefono" required>
+                <input type="text" id="email" name="email" required>
+                <div>
+                    <label for="nombre">Escribe un Comentario:</label>
+                    <textarea id="comentario" name="comentario"></textarea>
+                   
+                </div>
+                <div>
+                    <button class="enviar" type="submit">Enviar</button>
+                </div>
+
+            </form>
+    </div>
+        
     </footer>
     
 </body>

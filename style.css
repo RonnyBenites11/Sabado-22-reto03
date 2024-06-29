@@ -1,0 +1,226 @@
+body, html {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+   overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+.cabecera{
+    text-transform: uppercase;
+    display: flex;
+    width: 30vw;
+   
+}
+ul{
+ display: flex;
+ list-style-type: none;
+ width: 70vw;
+ 
+ 
+}
+a{
+    padding-right: 100px;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+   width:100px;
+   height: 30px;
+   border: 2px solid brown;
+   text-transform: uppercase;
+   background-color: white;
+    
+} 
+ .boton{
+    display: flex;
+     
+ }
+ .logo{
+    margin-left: 50px;
+    margin-right: 200px;
+ }
+ .seccion1{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+ }
+ .banner{
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+   filter: brightness(50%);
+ }
+ .texto-banner{
+    color: rgb(231, 231, 12);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700px;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px; /* Espaciado alrededor del texto */
+  z-index: 1;
+    
+ }
+ .seccion2 {
+   text-align: center;
+   margin-bottom: 40px;
+   overflow: hidden;
+ }
+ 
+ .subtitulo {
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: lighter;
+  
+   
+ }
+ 
+ .imgseccion2 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .imgseccion2 img {
+   margin-right: 20px; /* Espacio entre la imagen y el párrafo */
+ }
+ 
+ .parrafo {
+   text-align: justify;
+   margin-top: -200px;
+   max-width: 600px; /* Limitar el ancho del texto para una mejor lectura */
+ }
+ 
+ .parrafo p {
+   margin-bottom: 1em; /* Espacio entre los párrafos */
+ }
+ .linea-marron {
+   width: 80px; /* Ancho de la línea */
+   height: 2px;
+   display: flex;
+   align-items: center;
+    /* Grosor de la línea */
+   background-color: brown; /* Color de la línea */
+   margin: 0 auto;
+   margin-bottom: 40px; /* Espaciado superior e inferior */
+ }
+ .color{
+   color: white;
+   top: 163%;
+   text-align: center;
+   font-size: 41px;
+ }
+ .tamaño{
+   height: 40vh;
+   
+ }
+ .contenedor-articulos {
+   display: flex;
+   justify-content: space-between; /* Espacio uniforme entre los artículos */
+   align-items: flex-start; /* Alinear artículos al inicio verticalmente */
+   padding: 20px;
+   flex-wrap: nowrap;
+   
+   
+   
+    /* Permitir que los artículos se envuelvan en pantallas más pequeñas */
+ }
+ article {
+   text-align: center; /* Centrar texto bajo las imágenes */
+   margin: 1px;
+   border: 1px solid black;
+   
+ }
+ article img{
+   max-width: 150%;
+   height: 200px; /* Mantener proporción de la imagen */
+   display: block;
+   margin: 0 auto;
+}
+
+article p {
+   margin-top: 10px; /* Espacio entre la imagen y el texto */
+   font-size: 16px; /* Tamaño del texto */
+ }
+ .contenedor-columnas {
+   display: flex;
+   justify-content: space-around; /* Espacio uniforme entre los artículos */
+   align-items: flex-start; /* Alinear artículos al inicio verticalmente */
+   padding: 20px;
+   text-align: center;
+   width: 100vw;
+   height: auto;;
+   
+ }
+ .columna{
+   height: 40vh;
+   width: 15vw;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+ }
+ .sombra{
+   background-color: #ccc; /* Color de fondo del encabezado */
+  margin: 0px -20px 20px -20px; /* Ajustar el margen para que el fondo cubra todo el ancho */
+  padding: 10px;
+  margin-bottom: 0px;
+ }
+ .contenedor-formulario {
+   display: flex;
+   justify-content: space-around; /* Centrar horizontalmente */
+   align-items: center; /* Centrar verticalmente */
+  
+   width: 100vw;/* Altura completa de la pantalla */
+ }
+ 
+ .form-container {
+   width: 90vw;
+   margin: 0 auto;
+   padding: 10px;
+   position: relative;
+   margin-right: 10px;
+  
+}
+
+label {
+   margin-right: 28%;
+   margin-bottom: 5px;
+   position: relative;
+   width: 500%;
+}
+
+
+input
+{
+   width: 30%;
+   margin-right: 1%;
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+   box-sizing: border-box;
+   
+}
+
+textarea {
+   height: 100px;
+   resize: vertical;
+   width: 83vw;
+}
+
+.enviar {
+   background-color: #4CAF50;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 3px;
+   cursor: pointer;
+   
+}
